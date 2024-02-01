@@ -12,11 +12,21 @@ class HomeCenterAnimateView: NiblessView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.setupUI()
+        addNotification()
     }
     
-    
+    deinit{
+        NotificationCenter.default.removeObserver(self)
+    }
     
     //    MARK: method
+    
+    func addNotification(){
+        NotificationCenter.default.addObserver(self,
+                                                   selector: #selector(startNormalAnimate),
+                                                   name: UIApplication.willEnterForegroundNotification,
+                                                   object: nil)
+    }
     
     func setupUI(){
         self.outsideImageView.isHidden = false
@@ -27,7 +37,7 @@ class HomeCenterAnimateView: NiblessView {
     }
     
     
-    func startNormalAnimate(){
+  @objc func startNormalAnimate(){
         self.outsideImageView.layer.removeAnimation(forKey: "rotationAnimation")
         // 创建一个CABasicAnimation实例
         let outsideAnimation = CABasicAnimation(keyPath: "transform.rotation.z")
@@ -53,20 +63,19 @@ class HomeCenterAnimateView: NiblessView {
     
     //    MARK: property
     lazy var outsideImageView: UIImageView = {
-        let bgImage = UIImage(named: "outside_cycle")
+        let bgImage = UIImage(named: "outside_cycle_normal")
         let imgView = UIImageView(image: bgImage)
         imgView.contentMode = .scaleAspectFit
         self.addSubview(imgView)
         imgView.snp.makeConstraints { make in
             make.center.equalToSuperview()
             make.left.right.equalToSuperview()
-            
         }
         return imgView
     }()
     
     lazy var centerImageView: UIImageView = {
-        let bgImage = UIImage(named: "center_cycle")
+        let bgImage = UIImage(named: "center_cycle_normal")
         let imgView = UIImageView(image: bgImage)
         imgView.contentMode = .scaleAspectFit
         self.addSubview(imgView)
