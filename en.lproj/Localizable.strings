@@ -9,3 +9,7 @@
 "tabbar_location"="Location";
 "tabbar_vip"="VIP";
 "tabbar_profile"="Profile";
+"home_premium_expires_in" = "Premium Expires In";
+"home_days" = "Days";
+"home_tap_here" = "Tap Here";
+

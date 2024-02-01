@@ -6,7 +6,7 @@ target 'Lightning' do
   use_frameworks!
   pod 'Alamofire','5.8.1'
   pod 'ESTabBarController-swift','2.8.0'
-
+  pod 'SnapKit','5.6.0'
   # Pods for Lightning
 
 end

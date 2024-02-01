@@ -20,6 +20,14 @@
 		95616CAD2B6B7A4B00E06187 /* TabbarContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95616CAC2B6B7A4B00E06187 /* TabbarContentView.swift */; };
 		95616CB12B6B7C7900E06187 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 95616CB32B6B7C7900E06187 /* Localizable.strings */; };
 		95616CB62B6B7D9000E06187 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95616CB52B6B7D9000E06187 /* String+Extension.swift */; };
+		95616CBA2B6B85A200E06187 /* LGHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95616CB92B6B85A200E06187 /* LGHomeVC.swift */; };
+		95616CBC2B6B85FA00E06187 /* LGBIZFullBGVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95616CBB2B6B85FA00E06187 /* LGBIZFullBGVC.swift */; };
+		95616CBF2B6B88AE00E06187 /* LGLanguageUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95616CBE2B6B88AE00E06187 /* LGLanguageUtil.swift */; };
+		95616CC12B6B8F0700E06187 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95616CC02B6B8F0700E06187 /* UIFont+Extension.swift */; };
+		95616CC32B6B914E00E06187 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95616CC22B6B914E00E06187 /* UIView+Extension.swift */; };
+		95616CC62B6B955100E06187 /* HomeCenterAnimateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95616CC52B6B955100E06187 /* HomeCenterAnimateView.swift */; };
+		95616CC82B6B97E700E06187 /* UIScreen+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95616CC72B6B97E700E06187 /* UIScreen+Extension.swift */; };
+		95616CCA2B6B998E00E06187 /* UIControl+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95616CC92B6B998E00E06187 /* UIControl+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +50,14 @@
 		95616CB22B6B7C7900E06187 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		95616CB42B6B7C7B00E06187 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		95616CB52B6B7D9000E06187 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		95616CB92B6B85A200E06187 /* LGHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LGHomeVC.swift; sourceTree = "<group>"; };
+		95616CBB2B6B85FA00E06187 /* LGBIZFullBGVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LGBIZFullBGVC.swift; sourceTree = "<group>"; };
+		95616CBE2B6B88AE00E06187 /* LGLanguageUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LGLanguageUtil.swift; sourceTree = "<group>"; };
+		95616CC02B6B8F0700E06187 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		95616CC22B6B914E00E06187 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		95616CC52B6B955100E06187 /* HomeCenterAnimateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCenterAnimateView.swift; sourceTree = "<group>"; };
+		95616CC72B6B97E700E06187 /* UIScreen+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extension.swift"; sourceTree = "<group>"; };
+		95616CC92B6B998E00E06187 /* UIControl+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +102,7 @@
 		95204E662B6B5D19006252EC /* Lightning */ = {
 			isa = PBXGroup;
 			children = (
+				95616CBD2B6B888F00E06187 /* Utils */,
 				95616CA92B6B74E800E06187 /* Extension */,
 				95204E752B6B5D1B006252EC /* Info.plist */,
 				95616CA32B6B68B800E06187 /* Module */,
@@ -136,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				95616CA02B6B649400E06187 /* NiblessViewController.swift */,
+				95616CBB2B6B85FA00E06187 /* LGBIZFullBGVC.swift */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -143,6 +161,7 @@
 		95616CA32B6B68B800E06187 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				95616CB72B6B854A00E06187 /* Home */,
 				95616CA42B6B68C300E06187 /* Tabbar */,
 			);
 			path = Module;
@@ -162,8 +181,45 @@
 			children = (
 				95616CAA2B6B74F700E06187 /* UIColor+Extension.swift */,
 				95616CB52B6B7D9000E06187 /* String+Extension.swift */,
+				95616CC02B6B8F0700E06187 /* UIFont+Extension.swift */,
+				95616CC22B6B914E00E06187 /* UIView+Extension.swift */,
+				95616CC72B6B97E700E06187 /* UIScreen+Extension.swift */,
+				95616CC92B6B998E00E06187 /* UIControl+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		95616CB72B6B854A00E06187 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				95616CC42B6B953D00E06187 /* View */,
+				95616CB82B6B855100E06187 /* VC */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		95616CB82B6B855100E06187 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				95616CB92B6B85A200E06187 /* LGHomeVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		95616CBD2B6B888F00E06187 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				95616CBE2B6B88AE00E06187 /* LGLanguageUtil.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		95616CC42B6B953D00E06187 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				95616CC52B6B955100E06187 /* HomeCenterAnimateView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		E49C8D840EDFD82A6EFFD070 /* Pods */ = {
@@ -291,13 +347,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95616CBC2B6B85FA00E06187 /* LGBIZFullBGVC.swift in Sources */,
 				95616CAB2B6B74F700E06187 /* UIColor+Extension.swift in Sources */,
 				95616CB62B6B7D9000E06187 /* String+Extension.swift in Sources */,
+				95616CBA2B6B85A200E06187 /* LGHomeVC.swift in Sources */,
+				95616CC62B6B955100E06187 /* HomeCenterAnimateView.swift in Sources */,
 				95204E6C2B6B5D19006252EC /* RootViewController.swift in Sources */,
 				95616CA12B6B649400E06187 /* NiblessViewController.swift in Sources */,
 				95616CA82B6B6A4D00E06187 /* LGTabbarVC.swift in Sources */,
 				95616CAD2B6B7A4B00E06187 /* TabbarContentView.swift in Sources */,
+				95616CC82B6B97E700E06187 /* UIScreen+Extension.swift in Sources */,
+				95616CCA2B6B998E00E06187 /* UIControl+Extension.swift in Sources */,
+				95616CC32B6B914E00E06187 /* UIView+Extension.swift in Sources */,
+				95616CBF2B6B88AE00E06187 /* LGLanguageUtil.swift in Sources */,
 				95204E682B6B5D19006252EC /* AppDelegate.swift in Sources */,
+				95616CC12B6B8F0700E06187 /* UIFont+Extension.swift in Sources */,
 				95616C9F2B6B646200E06187 /* NiblessView.swift in Sources */,
 				95616C9C2B6B614E00E06187 /* LGNavController.swift in Sources */,
 			);

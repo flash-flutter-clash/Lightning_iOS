@@ -9,3 +9,8 @@
 "tabbar_location"="模式和位置";
 "tabbar_vip"="VIP";
 "tabbar_profile"="个人中心";
+"home_premium_expires_in" = "到期日期";
+"home_days" = "天";
+"home_tap_here" = "点这";
+
+
