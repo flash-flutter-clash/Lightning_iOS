@@ -1,16 +1,20 @@
 PODS:
   - Alamofire (5.8.1)
+  - ESTabBarController-swift (2.8.0)
 
 DEPENDENCIES:
-  - Alamofire
+  - Alamofire (= 5.8.1)
+  - ESTabBarController-swift (= 2.8.0)
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - ESTabBarController-swift
 
 SPEC CHECKSUMS:
   Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
+  ESTabBarController-swift: 05593a6ad64700b03c0eb60ff625916370aa4136
 
-PODFILE CHECKSUM: 92e027697eeb33e35593ecd73e9b9d4932a1c1de
+PODFILE CHECKSUM: dc35c94247bf817c94182690d4d8c882c6ef9679
 
 COCOAPODS: 1.14.2

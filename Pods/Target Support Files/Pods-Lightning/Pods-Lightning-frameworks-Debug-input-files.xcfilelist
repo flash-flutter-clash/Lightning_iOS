@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-Lightning/Pods-Lightning-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/ESTabBarController-swift/ESTabBarController_swift.framework

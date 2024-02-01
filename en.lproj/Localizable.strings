@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  Lightning
+
+  Created by nicola on 2024/2/1.
+  
+*/
+"tabbar_home"="Home";
+"tabbar_location"="Location";
+"tabbar_vip"="VIP";
+"tabbar_profile"="Profile";
